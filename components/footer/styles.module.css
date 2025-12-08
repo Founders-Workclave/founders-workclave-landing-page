@@ -1,0 +1,43 @@
+.footer {
+  background: #0a0a22;
+}
+
+.footerContent {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 113px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+}
+
+.footerContent > img {
+  width: 107px;
+  height: 32px;
+}
+
+.links {
+  display: flex;
+  gap: 24px;
+}
+
+.links > a {
+  font-family: "inter", sans-serif;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 24px;
+  cursor: pointer;
+}
+
+.links > a:hover {
+  color: #a6abe8;
+  transition: all 0.5s ease;
+}
+
+.socials {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
