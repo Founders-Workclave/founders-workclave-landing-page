@@ -4,6 +4,7 @@ import Star from "@/svgs/star";
 import Consultant from "@/svgs/consultant";
 import Arrow from "@/svgs/arrow";
 import Image from "next/image";
+import Link from "next/link";
 
 const FounderHero = () => {
   return (
@@ -24,13 +25,16 @@ const FounderHero = () => {
             craftsmanship.
           </p>
           <div className={styles.ctaButton}>
-            <button className={styles.ctaOne}>
+            <Link className={styles.ctaOne} href="/coming-soon">
               <Consultant />
               Try the AI Consultant
-            </button>
-            <button className={styles.ctaTwo}>
+            </Link>
+            <Link
+              className={styles.ctaTwo}
+              href="https://app.foundersworkclave.com/sign-up"
+            >
               Get Started for Free <Arrow />
-            </button>
+            </Link>
           </div>
         </div>
         <div className={styles.glowline}></div>

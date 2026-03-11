@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./styles.module.css";
 import File from "@/svgs/file";
 import { workSteps } from "@/utils/data";
+import Link from "next/link";
 import ConsultantTwo from "@/svgs/consultantTwo";
 
 const HowItWorks = () => {
@@ -40,10 +41,10 @@ const HowItWorks = () => {
           })}
         </div>
         <div className={styles.btn}>
-          <button>
+          <Link href="/coming-soon">
             <ConsultantTwo />
             Try the AI Consultant now
-          </button>
+          </Link>
         </div>
       </div>
     </div>

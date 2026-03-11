@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./styles.module.css";
 import Thunder from "@/svgs/thunder";
 import Image from "next/image";
+import Link from "next/link";
 
 const AgencyHero = () => {
   return (
@@ -19,10 +20,16 @@ const AgencyHero = () => {
           </p>
 
           <div className={styles.ctaButton}>
-            <button className={styles.ctaOne}>
+            <Link
+              className={styles.ctaOne}
+              href="https://app.foundersworkclave.com/sign-up"
+              target="_blank"
+            >
               Get Started for Free &rarr;
-            </button>
-            <button className={styles.ctaTwo}>See How it Works</button>
+            </Link>
+            <Link href="#features" className={styles.ctaTwo}>
+              See How it Works
+            </Link>
           </div>
         </div>
         <div className={styles.imageContain}>

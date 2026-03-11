@@ -3,6 +3,7 @@ import styles from "./styles.module.css";
 import Image from "next/image";
 import Consultant from "@/svgs/consultant";
 import Arrow from "@/svgs/arrow";
+import Link from "next/link";
 
 const Others = () => {
   return (
@@ -28,13 +29,17 @@ const Others = () => {
             AI-driven PRDs
           </h2>
           <div className={styles.ctaButton}>
-            <button className={styles.ctaOne}>
+            <Link className={styles.ctaOne} href="/coming-soon">
               <Consultant />
               Try the AI Consultant
-            </button>
-            <button className={styles.ctaTwo}>
+            </Link>
+            <Link
+              className={styles.ctaTwo}
+              href="https://app.foundersworkclave.com/sign-up"
+              target="_blank"
+            >
               Get Started for Free <Arrow />
-            </button>
+            </Link>
           </div>
         </div>
       </div>

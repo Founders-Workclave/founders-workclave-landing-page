@@ -81,8 +81,20 @@ const Header = () => {
             </div>
 
             <div className={styles.menuBtn}>
-              <button className={styles.loginBtn}>Login</button>
-              <button className={styles.signupBtn}>Sign Up</button>
+              <Link
+                href="https://app.foundersworkclave.com/login"
+                target="_blank"
+                className={styles.loginBtn}
+              >
+                Login
+              </Link>
+              <Link
+                href="https://app.foundersworkclave.com/sign-up"
+                target="_blank"
+                className={styles.signupBtn}
+              >
+                Sign Up
+              </Link>
             </div>
           </div>
         </div>

@@ -182,14 +182,15 @@
   padding-top: 40px;
 }
 
-.btn > button {
+.btn > a {
   background-color: #fff;
   color: #5865f2;
   padding: 18px 24px;
   font-family: "Inter", sans-serif;
   display: flex;
   gap: 8px;
-  font-weight: 700;
+  font-weight: 400;
+  text-decoration: none;
   font-size: 16px;
   align-items: center;
   border: 0;
@@ -314,7 +315,7 @@
     padding-top: 24px;
   }
 
-  .btn > button {
+  .btn > a {
     width: 100%;
     max-width: 420px;
     padding: 16px 20px;

@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./styles.module.css";
 import { workStepsTwo } from "@/utils/data";
 import Airplance from "@/svgs/airplane";
+import Link from "next/link";
 
 const WorksAgency = () => {
   return (
@@ -38,7 +39,12 @@ const WorksAgency = () => {
           })}
         </div>
         <div className={styles.btn}>
-          <button>Get Started for Free &rarr;</button>
+          <Link
+            href="https://app.foundersworkclave.com/sign-up"
+            target="_blank"
+          >
+            Get Started for Free &rarr;
+          </Link>
         </div>
       </div>
     </div>
