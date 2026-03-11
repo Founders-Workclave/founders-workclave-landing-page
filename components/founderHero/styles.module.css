@@ -116,18 +116,35 @@
 }
 
 .glowline {
-  margin-top: 16px;
+  margin: 16px auto 0;
   width: 80%;
-  height: 3px;
+  height: 8px;
   background: linear-gradient(
     90deg,
     rgba(99, 102, 241, 0) 0%,
     rgba(99, 102, 241, 1) 50%,
     rgba(99, 102, 241, 0) 100%
   );
-  box-shadow: 0 0 20px rgba(99, 102, 241, 0.8), 0 0 40px rgba(99, 102, 241, 0.6),
-    0 0 60px rgba(99, 102, 241, 0.4), 0 0 80px rgba(99, 102, 241, 0.2);
-  position: relative;
+  box-shadow: 0 0 8px rgba(99, 102, 241, 0.9), 0 0 16px rgba(99, 102, 241, 0.5),
+    0 0 24px rgba(99, 102, 241, 0.3), 0 0 40px rgba(99, 102, 241, 0.2);
+  border-radius: 40%;
+  filter: blur(0.5px);
+  animation: pulse 3s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 0.6;
+    box-shadow: 0 0 8px rgba(99, 102, 241, 0.9),
+      0 0 16px rgba(99, 102, 241, 0.5), 0 0 24px rgba(99, 102, 241, 0.3),
+      0 0 40px rgba(99, 102, 241, 0.2);
+  }
+  50% {
+    opacity: 1;
+    box-shadow: 0 0 12px rgba(99, 102, 241, 1), 0 0 24px rgba(99, 102, 241, 0.7),
+      0 0 36px rgba(99, 102, 241, 0.5), 0 0 50px rgba(99, 102, 241, 0.3);
+  }
 }
 
 .imageContainer {
