@@ -18,10 +18,34 @@ const Footer = () => {
           <Link href="#contact">Contact Us</Link>
         </div>
         <div className={styles.socials}>
-          <Twitter />
-          <Linkedln />
-          <Facebook />
-          <Instagram />
+          <Link
+            href="https://x.com/workclave"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Twitter />
+          </Link>
+          <Link
+            href="https://www.linkedin.com/showcase/founders-workclave/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Linkedln />
+          </Link>
+          {/* <Link
+            href="https://www.facebook.com/FoundersWorkclave"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Facebook />
+          </Link> */}
+          <Link
+            href="https://www.instagram.com/FoundersWorkclave"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Instagram />
+          </Link>
         </div>
       </div>
     </div>
