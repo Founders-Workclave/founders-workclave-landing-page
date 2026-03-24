@@ -305,3 +305,50 @@ export const faqData2 = [
       "All data is encrypted end-to-end, stored securely in the cloud, and protected with role-based access control to ensure only authorized team members can view or edit sensitive information.",
   },
 ];
+
+export const FAQ_SCHEMA = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "What exactly is Founders Workclave?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Founders Workclave is an AI-powered product development platform and agency. It helps founders turn ideas into structured PRDs, validate them, and collaborate with an in-house development team to build and launch real products.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Can I use the AI without hiring your team?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. You can use the AI Consultant to refine your ideas and generate detailed PRDs even if you are not ready to start development yet.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "How accurate are the AI-generated PRDs?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "The AI is trained to structure ideas with up to 80% accuracy. Each PRD is reviewed by a human product manager to ensure technical feasibility and market alignment.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "How does payment work?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Flexible options: direct invoice or milestone-based escrow. You only pay as each stage is completed and approved.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What happens after my product launches?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "The team provides post-launch support, performance monitoring, and scaling assistance.",
+      },
+    },
+  ],
+};
